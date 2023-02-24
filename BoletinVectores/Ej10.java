@@ -11,8 +11,8 @@ public class Ej10 {
         //Algoritmo:
         System.out.println("La tabla queda: ");
         for(i=0;i<v.length-1;i++){
-            numSig=v[(i+1)%5];
-            v[(i+1)%5]=v[i];
+            numSig=v[(i+1)%v.length];
+            v[(i+1)%v.length]=v[i];
             v[i]=numSig;
             System.out.println("En la posicion "+(i+1)+" esta "+v[i]);
         }

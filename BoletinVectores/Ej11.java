@@ -14,29 +14,29 @@ public class Ej11 {
     public static void main(String[] args){
         //Entorno:
         int[] v;
-        byte i, i2;
+        int aux;
+        byte i, i2, i3;
         //Algoritmo:
         i=0;
-        v=new int[50];
-        System.out.print("Inserte un numero en la tabla: ");
-        v[i]=Leer.datoInt();
-        while(i<50 && continuar()){
-            i++;
+        v=new int[10];
+        do{
             i2=0;
             System.out.print("Inserte otro numero en la tabla: ");
             v[i]=Leer.datoInt();
-            while(i2<i && v[i2]!=v[i]){
+            while(i2<i){
                 if(v[i]<v[i2]){
-                    v[i+1]=v[i2];
-                    v[i2]=v[i];
-                } else {
-                    i2++;
+                    aux=v[i];
+                    for(i3=i;i3>i2;i3--){
+                        v[i3]=v[i3-1];
+                    }
+                    v[i2]=aux;
                 }
+                i2++;
             }
-        }
-        while(i>=0){
+            i++;
+        }while(i<v.length && continuar());
+        for(i=(byte)(i-1);i>=0;i--){
             System.out.println("En la posicion "+(i+1)+" esta: "+v[i]);
-            i--;
         }
     }
 }
