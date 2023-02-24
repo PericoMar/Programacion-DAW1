@@ -1,0 +1,19 @@
+Programa:SumaParesProductoImpares
+Autor:Pedro Martinez Gonzalez
+Entorno:
+	i es numérico entero
+	suma es numérico entero
+	producto es numérico entero
+Algoritmo:
+	suma<--0
+	producto<--1
+	Para i de 1 a 20 hacer
+		Si i % 2= 0 entonces
+			suma<--suma+i
+		Sino
+			producto<--producto*i
+		Fin Si
+	Fin Para
+	Escribir "La suma de los primeros 10 pares es: ", suma
+	Escribir "El producto de los primeros 10 impares es: ", producto
+Fin Programa

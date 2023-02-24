@@ -1,0 +1,12 @@
+Programa:Sucesión
+Autor:Pedro Martinez Gonzalez
+Entorno:
+	i es numérico entero
+	sucesion es numérico real
+Algoritmo:
+	Escribir "Los resultados de la sucesión an=n+1/n+2 son: "
+	Para i de 0 a 9 hacer
+		sucesion<--(i+1)/(i+2)
+		Escribir "a",i,"=",i,"+1/",i,"+2= ",sucesion
+	Fin Para
+Fin Programa

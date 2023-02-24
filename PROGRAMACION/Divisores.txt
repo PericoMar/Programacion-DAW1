@@ -1,0 +1,32 @@
+Programa:Divisores
+Autor:Pedro Martinez Gonzalez
+Entorno:
+	num es numérico entero
+	i es numérico entero
+	tienedivisores es booleano
+Algoritmo:
+	tienedivisores<--FALSO
+	Escribir "Inserte un número entero: "
+	Leer num
+	Escribir "Divisores de ",num,":"
+	Fin Si
+	Si num>0 entonces
+	Para i de 2 a num-1 hacer
+		Si num % i=0 entonces
+			Escribir i," y -",i, "son divisores de ", num
+			tienedivisores<--VERDADERO
+		Fin Si
+	Fin Para
+	Fin Si
+	Si num<0 entonces
+	Para i de num+1 a -2 hacer
+		Si num % i=0 entonces
+			Escribir i," y -",i, "son divisores de ", num
+			tienedivisores<--VERDADERO
+		Fin Si
+	Fin Para
+	Fin Si
+	Si !(tienedivisores) entonces
+		Escribir num, " no tiene divisores"
+	Fin Si
+Fin Programa

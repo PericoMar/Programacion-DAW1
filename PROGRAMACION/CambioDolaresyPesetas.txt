@@ -1,0 +1,34 @@
+/*Programa:CambioDolaresyPesetas
+Autor:Pedro Martinez Gonzalez
+Entorno:
+	euros es numérico real
+	dolares es numérico real
+	pesetas es numérico entero
+	CONST CAMBIODOLARS es numérico real <-- 0.99
+Algoritmo:
+	Escribir "Inserte un valor en euros: "
+	Leer euros
+	dolares<--euros*CAMBIODOLARS
+	pesetas<--euros*166.3
+	Escribir euros,"euros son ",dolares,"dolares y ",pesetas,"pesetas"
+Fin Programa
+*\	
+
+//Programa:CambioDolaresyPesetas
+//Autor:Pedro Martinez Gonzalez
+public class cambioDolaresyPesetas{
+	public static void main(String[] args){
+	//Entorno:
+		//******declaración de variables
+	float euros;
+	float dolares;
+	int pesetas;
+	//Algoritmo:
+		//******Secuencia de instrucciones
+	System.out.print("Inserte un valor en euros: ");
+	euros=Leer.datoFloat();
+	dolares=euros*CAMBIODOLARS;
+	pesetas=euros*166.3;
+	System.out.print(euros,"euros son ",dolares,"dolares y ",pesetas,"pesetas");
+	}//Fin Programa
+}

@@ -1,0 +1,25 @@
+Nombre:NumeroNegativo
+Autor:Pedro Martínez González
+Entorno:
+	num es numérico real
+	hayNegativo es booleano
+	opcion es alfanumérico (1)
+Algoritmo:
+	hayNegativo<--FALSO
+	Repetir
+		Escribir "Intruzca un número: "
+		Leer num
+		Si num<0 etonces
+			hayNegativo<--VERDADERO
+		Fin Si
+		Repetir
+			Escribir "Introduzca S si quiere seguir introduciendo numeros y N sino"
+			Leer opcion
+		Hasta opcion="S" o opcion="s" o opcion="N" o opcion="n" 
+	Hasta opcion="N" o opcion="n" 
+	Si hayNegativo entonces
+		Escribir "Sí hay algún número negativo"
+	Sino
+		Escribir "No hay números negativos"
+	Fin Si
+Fin Programa

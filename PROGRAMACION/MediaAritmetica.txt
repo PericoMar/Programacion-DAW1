@@ -1,0 +1,17 @@
+Programa:MediaAritmetica
+Autor:Pedro Martinez Gonzalez
+Entorno:
+	num es numérico real
+	suma es numérico real
+	media es numérico real
+	i es numérico entero
+Algoritmo:
+	suma<--0
+	Para i de 1 a 5 hacer
+		Escribir "Inserte un número: "
+		Leer num
+		suma<--suma+num
+	Fin Para
+	media<--suma/5
+	Escribir "La media aritmetica de los numeros introducidos por teclado es: ",media
+Fin Programa
